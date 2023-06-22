@@ -22,7 +22,7 @@ function routeToController($uri, $routes)
 function abort($code = 404)
 {
     http_response_code($code);
-    require 'views/404.php';
+    require "views/{$code}.php";
     die();
 };
 
