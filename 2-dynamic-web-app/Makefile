@@ -5,6 +5,8 @@ mysql:
 	docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
 startdb:
 	docker start mysql
+stopdb:
+	docker stop mysql
 createdb:
 	docker exec -it mysql mysql -u root -ppassword -e "CREATE DATABASE notes;"
 dropdb:
