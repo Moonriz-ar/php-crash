@@ -1,5 +1,5 @@
 start:
-	php -S localhost:8080
+	php -S localhost:8080 -t public
 
 mysql:
 	docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql
