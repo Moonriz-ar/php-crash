@@ -1,5 +1,7 @@
 <?php
 
+namespace Core;
+
 class Validator
 {
     // static allows calling this method with Validator::string without initializing a Validator instance
