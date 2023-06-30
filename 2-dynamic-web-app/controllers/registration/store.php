@@ -33,7 +33,7 @@ if ($user) {
     header('location: /');
     exit();
 } else {
-    $db->query('INSERT INTO USERS(email, password) VALUES(:email, :password)', [
+    $db->query('insert into users (email, password) values (:email, :password)', [
         'email' => $email,
         'password' => $password // NEVER store database passwords in clear text. We'll fix this in the login form episode.
     ]);
