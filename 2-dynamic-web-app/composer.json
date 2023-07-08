@@ -1,0 +1,16 @@
+{
+  "name": "andrea/2-dynamic-web-app",
+  "authors": [
+    {
+      "name": "Andrea Lin",
+      "email": "andre93.lin@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Core\\": "Core/",
+      "Http\\": "Http/"
+    }
+  }
+}
